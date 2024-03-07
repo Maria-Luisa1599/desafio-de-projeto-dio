@@ -2,58 +2,58 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8"> <!-- serve pra garantir o maximo de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução ao HTML</title>
+        <meta charset="UTF-8"> <!-- serve pra garantir o maximo de caracteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução ao HTML</title>    
 </head>
 
 <body>
     <header>
-        <h1>Primeiros passos com HTML</h1>
+        <h1>Primeiros passos com <abbr title="Hypertext Markup Language">HTML</abbr></h1>
     </header>
     <hr>
     <main>
         <div id="header-main">
             <ul>
-                <li>História da Web</li>
-                <li>Clients e Servers</li>
-                <li>Entendendo sobre HTML
-                    <ul>
-                        <li>HTML</li>
-                        <li>Tags</li>
-                        <li>Atributos</li>
-                        <li>Listas</li>
-                    </ul>
+                <li><a href="#historia-web">História da Web</a></li>
+                <li><a href="#clients-servers">Clients e Servers</a></li>
+                <li><a href="#entendendo-html">Entendendo sobre <abbr title="Hypertext Markup Language">HTML</abbr></a>
+                    <ol>
+                        <li><a href="#html"><abbr title="Hypertext Markup Language">HTML</abbr></a></li>
+                        <li><a href="#tags">Tags</a></li>
+                        <li><a href="#atributo">Atributos</a></li>
+                        <li><a href="#lista">Listas</a></li>
+                    <ol>
                 </li>
             </ul>
         </div>
         <hr>
-        <h2>História da Web</h2>
+        <h2 id="historia-web">História da Web</h2>
         <div>
             <h4>Primeiros Computadores</h4>
             <div id="primeira-geracao">
                 <p>
-                    Primeira Geração (<strong>1944</strong>)
+                    <u>Primeira Geração</u> (<strong>1944</strong>)
                 </p>
                 <img width="350px"
                     src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=420&h=240&crop=1">
                 <br>
-                <sup>ENIAC</sup>
+                <sup><small>ENIAC</small></sup>
             </div>
 
             <div id="segunda-geracao">
                 <p>
-                    Segunda Geração (<strong>1959 - 1965</strong>)
+                    <u>Segunda Geração</u> (<strong>1959 - 1965</strong>)
                 </p>
                 <img width="350px"
                     src="http://historiadainformatica2013.weebly.com/uploads/2/4/4/7/24470693/2161387.jpg?428">
                 <br>
-                <sup>IBM 7094</sup>
+                <sup><small>IBM 7094</small></sup>
             </div>
 
             <div id="terceira-geracao">
                 <p>
-                    Terceira Geração (<strong>1944</strong>)
+                    <u>Terceira Geração</u> (<strong>1944</strong>)
                 </p>
                 <img width="350px"
                     src="https://aevolucaodocomputador.weebly.com/uploads/1/3/9/2/13923010/3030487_orig.jpg?0">
@@ -62,7 +62,7 @@
 
             <div id="quarta-geracao">
                 <p>
-                    Quarta Geração (<strong>1944</strong>)
+                    <u>Quarta Geração</u> (<strong>1944</strong>)
                 </p>
                 <img
                 width="350px"
@@ -70,32 +70,62 @@
                 <br>
             </div>
         </div>
-        <h2>Clients e Servers</h2>
+        <h2 id="clients-servers">Clients e Servers</h2>
             <div>
                 <div>
                     <p>
-                        
+                        <i>Clients</i> são dispositivos que acessam serviços.
+Já os <i>Servers</i> são servidores que gerenciam esse serviço enviando informações para o clients, ou seja,
+os Clients pedem coisas(informações) e os servers fornecem.
+
                     </p>
                     <img width="350px" src="https://darvishdarab.github.io/cs421_f20/assets/images/client-server-1-d85a93ea16590c10bed340dd78294d0d.png">
                 </div>
             </div>
-        <h2>Entendendo sobre HTML</h2>
-        <h3>HTML</h3>
+        <h2 id="entendendo-html">Entendendo sobre <abbr title="Hypertext Markup Language">HTML</abbr></h2>
+        <h3 id="html"><abbr title="Hypertext Markup Language">HTML</abbr></h3>
             <div>
-                
+                <p>
+                   Html(Hypertext Markup Language) é uma <mark>linguagem de marcação</mark>,
+ou seja um conjunto de códigou ou tags que montam a estrutura e o layout de um documento digital. Ele <strong>não</strong>
+é uma <del>linguagem de programação</del>, pois não cria funcionalidades dinâmicas.</p>
             </div>
-        <h3>Tags</h3>
+        <h3 id="tags">Tags</h3>
             <div>
-
+                As <i>Tags</i> são utilizadas para conceituar partes do conteúdo e exibi-los.
             </div>
-        <h3>Atributos</h3>
+        <h3 id="atributo">Atributos</h3>
             <div>
-
+                <p>
+                    De forma simples, atributos lembram <mark>"adjetivos"</mark>.
+Eles "trazem" informações adicionais sobre como deve se tratar um elemento
+                </p>
             </div>
 
-        <h3>Listas</h3>
+        <h3 id="lista">Listas</h3>
             <div>
+                <p>As listas são formas de organizar itens,
+podendo ser de forma <i>ordenada</i> ou <i>não-ordenada</i>. A diferença de uma para outra é que a
+lista ordenada é formada por números ao seu lado.
+    <blockquote><sub><strong>Ex.:</strong></sub> 
+        <ol>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+    </blockquote>
+</p>
 
+<p>
+    Já as listas não-ordenadas, ao invés de números ao seu lado, contém "círculos"
+    <blockquote><sub><strong>Ex.:</strong></sub> 
+        <ul>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ul>
+    </blockquote>
+</p>
             </div>
     </main>
     <footer>
